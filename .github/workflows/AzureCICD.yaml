@@ -45,5 +45,5 @@ jobs:
           - name: Deploy to Azure
             uses: azure/webapps-deploy@v3
             with:
-              app-name: 'devops-2026-bend'
+              app-name: 'tf-net-2026-bend-app'
               package: './publish'
