@@ -11,7 +11,7 @@ namespace TF_NET_2026_IAC_Bend.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok("Hello, World!");
+            return Ok("Hello, les .NET!");
         }
     }
 }
