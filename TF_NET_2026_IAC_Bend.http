@@ -1,0 +1,6 @@
+@TF_NET_2026_IAC_Bend_HostAddress = http://localhost:5223
+
+GET {{TF_NET_2026_IAC_Bend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
