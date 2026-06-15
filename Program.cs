@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
+using TF_NET_2026_IAC_Bend.Db;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services.AddDbContext<MyDbContext>(o =>
+{
+    o.UseSqlServer(builder.Configuration.GetConnectionString("Main"));
+});
 
 var app = builder.Build();
 
